@@ -8,6 +8,10 @@
 \ProcessOptions\relax
 
 \RequirePackage[T1]{fontenc}
+
+% don't use bera if you're using math mode
+% in that case, use something like Bitstream Charter instead:
+% \RequirePackage[bitstream-charter]{mathdesign}
 \RequirePackage{bera}
 
 \RequirePackage{setspace}
