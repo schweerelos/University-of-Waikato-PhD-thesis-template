@@ -123,29 +123,8 @@
 \renewcommand*{\@pnumwidth}{2em}
 \makeatother% --> \makeatletter
 
-% improve spacing (?)
-\makeatletter
-\renewcommand\section{\@startsection{section}{1}{\z@}%
-  {-2.5ex \@plus -.5ex \@minus -.2ex}%
-  {1.8ex \@plus.2ex}%
-  {\setlength{\parfillskip}{\z@ \@plus 1fil}%
-    \raggedsection\normalfont\sectfont\nobreak\size@section\nobreak}}
-\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
-  {-.8ex\@plus -.5ex \@minus -.2ex}%
-  {1.3ex \@plus .2ex}%
-  {\setlength{\parfillskip}{\z@ \@plus 1fil}%
-    \raggedsection\normalfont\sectfont\nobreak\size@subsection\nobreak}}
-\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
-  {-.5ex\@plus -.3ex \@minus -0ex}%
-  {.8ex \@plus .2ex}%
-  {\setlength{\parfillskip}{\z@ \@plus 1fil}%
-    \raggedsection\normalfont\sectfont\nobreak\size@subsubsection\nobreak}}
-\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
-  {-0ex \@plus -.5ex \@minus -0ex}%
-  {-1em}%
-  {\setlength{\parfillskip}{\z@ \@plus 1fil}%
-    \raggedsection\normalfont\sectfont\size@paragraph}}
-\makeatother
+% improve spacing
+\usepackage[compact]{titlesec}
 
 % change size of floats allowed at top/bottom etc
 % http://www.tex.ac.uk/cgi-bin/texfaq2html?label=floats
